@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    /* Primary */
+    --Lila:#8E7BEF;
+    --Dark:#222222;
+    --Ambar:#FCDA68;
+    --Gris:#423F40;
+    --GrisHumo: #B1AAAA;
+    --White:#ffffff;
+    --Humo:#F9F5F2;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+    height: 50px;
+    background-color: var(--White);
+
+
+    position: fixed;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    
+}
+.menu_op{
+    list-style: none;
+}
+.menu_link{
+    text-decoration: none;
+    color: var(--Dark);
+}
+.menu_link:hover{
+    color: var(--Lila);
+}
+.icon_menu {
+    display: none;
+}
+
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 2rem 1rem;
+    min-height: 100vh;
+
+}
+.section_header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+
+    padding-top: 2rem;
+}
+
+
+.banner_title{
+    font-size: 3.125rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 3.2rem;
+}
+.banner_paragraph{
+    line-height: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--Gris);
+}
+.banner_exp{
+    text-align: center;
+}
+.banner_exp_year{
+    color: var(--Lila);
+}
+.banner_exp_dsc{
+    color: var(--GrisHumo);
+}
+.banner_social{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0 0 0;
+}
+.banner_social_network{
+    background-color: var(--Lila);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center; 
+}
+
+.banner_img_mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.banner_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: none;
+    background-color: var(--Lila);
+    color: var(--White);
+}
+.btn_desktop,
+.banner_img_desktop{
+    display: none;
+}
+
+
+
+.exp_hab{
+    background-color:var(--Ambar);
+}
+.experience_header{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.experience_title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+}
+.experience_paragraph {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: var(--Gris);
+}
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    width: 100%;
+}
+.exp_hab_title{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.exp_job{
+    display: flex;
+    gap: 1rem;
+}
+.exp_job:nth-child(2){
+    border-bottom: 1px solid black;
+}
+.exp_job:nth-child(3) {
+    border-bottom: 1px solid black;
+}
+.exp_rol{
+    padding: 0 1rem;
+}
+.rol{
+    font-weight: 700;
+}
+
+.habilities{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.container_hab{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    text-align: center;
+    gap:1rem;
+}
+
+.item_hab{
+    display: grid;
+    justify-content: stretch;
+    align-self: center;
+    place-items: center;
+    gap: 0;
+}
+.item_hab:nth-child(1){
+    grid-column: 2/3;
+}
+.item_hab:nth-child(2) {
+    grid-column: 2/3;
+}
+.item_hab:nth-child(3) {
+    grid-column: 2/3;
+}
+.item_hab:nth-child(4) {
+    grid-column: 2/3;
+}
+.dsc_hab{
+    line-height: 1.3rem;
+    font-weight: 600;
+}
+
+
+.portfolio{
+    background-color: var(--White);
+}
+.portfolio_header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.portfolio_title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.container_app{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    justify-content: stretch;
+    gap:1rem;
+
+    width: 100%;
+}
+.item_app{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:0.8rem;
+}
+.dsc_app{
+    color: var(--Lila);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.img_app{
+    width: 100%;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+
+    background-color: var(--White);
+}
+.contact_title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.container_contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    place-items: center;
+    text-align: center;
+}
+.item_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.item_bg_icon{
+    background-color: var(--Humo);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+.item_dsc01{
+    font-weight: 600;
+}
+.item_dsc02{
+    font-size: 0.875rem;
+}
+
+.content_footer{
+    text-align: center;
+}
+.footer_dsc{
+    color: var(--Lila);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.footer_author{
+    font-size: 0.875rem;
+}
+
+
+@media (min-width:768px){
+    *{
+        font-size: 18px;
+    }
+    body{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .navbar{
+        max-width: 1200px;
+    }
+    .section {
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+    .section_header{
+        gap: 1.25rem;
+        height: 100%;
+    }
+
+    .banner {
+        flex-direction: row;
+    }
+    .banner_title{
+        font-size: 4.44rem;
+        line-height: 4.7rem;
+        text-align: left;
+    }
+    .banner_paragraph{
+        text-align: left;
+    }
+    .banner_exp{
+        text-align: left;
+    }
+    .banner_social{
+        justify-content: flex-start;
+        gap:1.5rem;
+        padding: 0 0 1rem 0;
+    }
+    .btn_desktop{
+        width: 50%;
+        padding: 0.7rem;
+        display: flex;
+    }
+    .banner_img_desktop{
+        text-align: center;
+        display: block;
+    }
+    .bann_img_desk{
+        max-width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+    .banner_img_mobile{
+        display: none;
+    }
+
+
+    .exp_hab{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-content: center;
+    }
+    .habilities{
+        grid-column: 1/3;
+    }
+    .container_hab{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .item_hab:nth-child(1){
+        grid-column: 2/3;
+    }
+    .item_hab:nth-child(2){
+        grid-column: 3/4;
+    }
+    .item_hab:nth-child(3){
+        grid-column: 4/5;
+    }
+    .item_hab:nth-child(4){
+        grid-column: 5/6;
+    }
+    .container_app{
+        display: flex;
+    }
+
+    .contact{
+        width: 100%;
+    }
+    .contact_title{
+        text-align: left;
+    }
+    .container_contact{
+        grid-template-columns: repeat(6,1fr);
+    }
+    .item_contact:nth-child(1){
+        grid-column: 3/4;
+    }
+    .item_contact:nth-child(2) {
+        grid-column: 4/5;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar{
+        padding: 1rem;
+    }
+    .menu {
+        background-color: var(--White);
+        transform: translateX(-100%);
+
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        top: 50px;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+
+        transition: transform 0.5s;
+    }
+
+    .icon_menu {
+        display: block;
+        cursor: pointer;
+        background-color: var(--Ambar);
+    }
+
+    .menu_show {
+        transform: translateX(0);
+    }
+}
+
+/*---------------Estilos Barra Scroll---------------*/
+::-webkit-scrollbar {
+    width: 10px;
+    background: #131212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C1BCBC;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8E7F7F;
+}
